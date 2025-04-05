@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', 'Open Sans', sans-serif; /* Menambahkan font secara global */
+}
+
+body {
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+  min-height: 100vh;
+}
+
+.page {
+  width: 1280px; /* Menetapkan lebar sesuai ukuran layout Figma */
+  height: 720px; /* Menetapkan tinggi sesuai ukuran layout Figma */
+  margin: 0px auto; /* Menyelaraskan elemen ke tengah secara horizontal */
+  padding-top: 64px; /* Menambahkan padding atas */
+}
+
+
+/* Check margin */
+nav {
+  font-family: 'Mulish', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  margin-bottom: 64px; /* Menambahkan padding atas dan bawah untuk memberi ruang lebih */
+}
+
+nav a {
+  font-family: 'Inter', sans-serif; /* Menggunakan font Inter */
+  font-weight: 700; /* Berat font bold */
+  font-size: 22px; /* Ukuran font 22px */
+  line-height: 26px; /* Tinggi baris 26px */
+  letter-spacing: 0%; /* Jarak antar huruf 0% */
+  color: #89C5CC; /* Menetapkan warna teks */
+  text-decoration: none; /* Menghapus garis bawah */
+}
+
+
+
+/* Check list styling */
+nav ul {
+  display: flex;
+  gap: 48px;
+  list-style-type: none;  /* Menghilangkan bullet point di depan setiap item */
+  padding: 0;  /* Menghapus padding default */
+  margin: 0;  /* Menghapus margin default */
+  align-items: center;  /* Memastikan item rata tengah secara vertikal */
+}
+
+/* Check list link style */
+nav ul li a {
+  text-decoration: none;  /* Menghapus garis bawah pada tautan */
+  color: #1F1534;  /* Mengatur warna teks */
+  font-family: 'Mulish', sans-serif;  /* Menggunakan font Mulish */
+  font-weight: 400;  /* Mengatur berat font menjadi normal */
+  font-size: 18px;  /* Mengatur ukuran font */
+  line-height: 100%;  /* Mengatur tinggi baris */
+  letter-spacing: 0%;  /* Mengatur jarak antar huruf */
+  opacity: 0.5;  /* Menambahkan efek opacity 50% saat tidak hover */
+}
+
+/* Make text bold (font-weight 700) and opacity 100% on hover */
+nav ul li a:hover {
+  font-weight: 700;  /* Mengubah font-weight menjadi bold pada hover */
+  opacity: 1;  /* Mengembalikan opacity menjadi 100% pada hover */
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 88px;
+}
+
+/* Check margin and font styling */
+.text h1 {
+  font-family: 'Mulish', sans-serif; /* Menggunakan font Mulish */
+  font-weight: 400; /* Berat font normal */
+  font-size: 48px; /* Ukuran font 48px */
+  line-height: 150%; /* Tinggi baris 150% dari ukuran font */
+  letter-spacing: 0%; /* Jarak antar huruf 0% */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital semua */
+  margin-bottom: 20px;
+}
+
+/* Check font styling */
+.text h1 span {
+  font-family: 'Mulish', sans-serif; /* Menggunakan font Mulish */
+  font-weight: 700; /* Berat font bold */
+  font-size: 48px; /* Ukuran font 48px */
+  line-height: 150%; /* Tinggi baris 150% dari ukuran font */
+  letter-spacing: 0%; /* Jarak antar huruf 0% */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital semua */
+  color: #89C5CC; /* Menambahkan warna latar belakang */
+}
+
+
+/* Check font styling */
+.text p {
+  font-family: 'Open Sans', sans-serif; /* Menggunakan font Open Sans */
+  font-weight: 400; /* Berat font normal */
+  font-size: 16px; /* Ukuran font 16px */
+  line-height: 160%; /* Tinggi baris 160% dari ukuran font */
+  letter-spacing: 0%; /* Jarak antar huruf 0% */
+  color: #7D7987;
+  margin-bottom: 40px;
+}
+
+
+/* Check font styling and make sure the button is rounded */
+.text button {
+  width: 169px; /* Menetapkan lebar button */
+  height: 56px; /* Menetapkan tinggi button */
+  top: 486px; /* Menetapkan jarak dari atas */
+  left: 120px; /* Menetapkan jarak dari kiri */
+  border-radius: 4px; /* Membuat sudut button menjadi bulat */
+  padding: 14px 32px 15px 32px; /* Menetapkan padding (top, right, bottom, left) secara singkat */
+  font-family: 'DM Sans', sans-serif; /* Menggunakan font DM Sans */
+  display: flex; /* Menggunakan flexbox untuk layout */
+  background-color: #69B99D; /* Menambahkan warna latar belakang */
+  border: none; /* Menghilangkan border hitam */
+  font-weight: 500; /* Berat font 500 */
+  font-size: 16px; /* Ukuran font 16px */
+  line-height: 100%; /* Tinggi baris 100% */
+  letter-spacing: 0%; /* Jarak antar huruf 0% */
+  text-align: center; /* Menyelaraskan teks di tengah secara horizontal */
+  color: white; /* Warna teks putih */
+  align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+  justify-content: center; /* Menyelaraskan elemen secara horizontal di tengah */
+}
+
+.text button img {
+  width: 24px; /* Menetapkan lebar ikon whatsapp */
+  height: 24px; /* Menetapkan tinggi ikon whatsapp */
+  margin-right: 8px; /* Memberikan jarak antara gambar dan teks */
+}
+
+/* Handle when user hover on the button */
+.text button:hover {
+  background-color: #5a9e83; /* Mengubah warna latar belakang saat hover */
+  cursor: pointer; /* Mengubah kursor menjadi pointer (tangan) saat hover */
+}
+
+/* Check the text styling */
+footer {
+  font-family: 'Open Sans', sans-serif; /* Menggunakan font Open Sans */
+  font-weight: 400; /* Berat font normal */
+  font-size: 14px; /* Ukuran font 14px */
+  line-height: 160%; /* Tinggi baris 160% dari ukuran font */
+  letter-spacing: 0%; /* Jarak antar huruf 0% */
+  text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+/* Check the text styling */
+footer a {
+  font-family: 'Open Sans', sans-serif; /* Menggunakan font Open Sans */
+  font-weight: 700; /* Berat font bold */
+  font-size: 14px; /* Ukuran font 14px */
+  line-height: 160%; /* Tinggi baris 160% dari ukuran font */
+  letter-spacing: 0%; /* Jarak antar huruf 0% */
+  text-align: center; /* Menyelaraskan teks di tengah */
+  color: #000; /* Warna teks hitam */
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+}
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
